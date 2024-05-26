@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>VIKRAM</title>
+	<link rel="stylesheet" type="text/css" href="VIKRAM.css">
+	<link rel="Icon" type="img/png" href="V.png">
+</head>
+<body>
+
+	<div class="hero">
+		<img src="V.png" id="V">
+		<img src="I.png">
+		<img src="K.png">
+		<img src="R.png">
+		<img src="A.png">
+		<img src="M.png">
+	</div>
+
+	<div class="Enter">
+		<img src="V.png">
+		<div class="LOAD">
+			<svg height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="Inside">
+				<circle width="100%" height="100%" stroke-linecap="round" r="40%" cy="50%" cx="50%" id="CIN" />
+			</svg>
+		</div>
+	</div>
+
+	<div class="Main">
+		<div class="nav">
+			<div class="logo"><a href=""><img src="V.png"></a></div>
+			<div class="menu" onclick="menu()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<img src="V Processer.png" class="picture" id="picture">
+		<div class="discription">
+		    <img src="V.png">
+		    <img src="I.png">
+		    <img src="K.png">
+		    <img src="R.png">
+		    <img src="A.png">
+		    <img src="M.png">
+		</div>
+		<div class="menubar" id="menubar">
+			<div class="discription2">
+		    <img src="V.png">
+		    <img src="I.png">
+		    <img src="K.png">
+		    <img src="R.png">
+		    <img src="A.png">
+		    <img src="M.png">
+		</div>
+			<ul class="list">
+			    <li onclick="menus()">•&nbsp;&nbsp;&nbsp;Home</li>
+			    <li>•&nbsp;&nbsp;&nbsp;Search</li>
+			    <li>•&nbsp;&nbsp;&nbsp;Contact</li>
+			    <li>•&nbsp;&nbsp;&nbsp;Restart</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let menubar = document.getElementById('menubar');
+		let picture = document.getElementById('picture');
+
+		function menu() {
+			menubar.style.width = "75%";
+			menubar.style.animation = "menu 1s linear";
+			setTimeout(()=>{menubar.style.animation = "m";},1001);
+			picture.style.left = "12.5%";
+		}
+
+		function menus(){
+			menubar.style.width = "0%";
+			menubar.style.animation = "menu 1s linear reverse";
+			setTimeout(()=>{menubar.style.animation = "m";},1001);
+			picture.style.left = "20%";
+		}
+	</script>
+
+</body>
+</html>

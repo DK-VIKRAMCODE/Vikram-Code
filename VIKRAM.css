@@ -1,0 +1,333 @@
+
+body{
+    background: black;
+    overflow: hidden;
+}
+
+.hero{
+    width: 100%;
+    aspect-ratio: 8.75;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero img{
+    height: 75%;
+    animation: V 2s linear;
+}
+
+#V{
+    height: 100%;
+}
+
+@keyframes V {
+    0%{height: 0%;}
+    66.6666666666%{height: 0%;}
+    90%{height: 100%;}
+}
+
+.Enter{
+    background: repeating-linear-gradient(150deg, #800080, #000020, #000020, #000020, #000020, #000020, #000045);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: Visible 4s linear;
+}
+
+@keyframes Visible {
+    0%{opacity: 0%;}
+    75%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+.Enter img{
+    width: 12.5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.LOAD{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    aspect-ratio: 1;
+    animation: ReVisible 5s linear;
+}
+
+@keyframes ReVisible {
+    0%{opacity: 0%;}
+    99%{opacity: 0%;}
+}
+
+#Inside{
+    transform: rotate(-90deg);
+    transition: 0.25s linear;
+    border-radius: 50%;
+}
+
+#CIN{
+    fill: none;
+	stroke: ghostwhite;
+	stroke-width: 3.5%;
+	animation: Load 5s linear infinite;
+}
+
+.Enter:active #Inside{
+	box-shadow: inset -2.5px -2.5px 5px -1px rgb(0 0 0 / 97.5%),
+		-0.5px -0.5px 0px rgb(0 0 0 / 75%),
+		  0.5px 0.5px 0px rgb(255 255 255 / 0.5%),
+		-10px 10px 10px -10px rgb(255 255 255 / 12.5%);
+}
+
+@keyframes Load {
+	0%{stroke-dasharray: 50%;stroke-dashoffset: -0%;}
+	50%{stroke-dasharray: 50%;stroke-dashoffset: -250%;}
+	100%{stroke-dasharray: 50%;stroke-dashoffset: -500%;}
+}
+
+.Main{
+    background: ghostwhite;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ComeOut 12.5s linear;
+}
+
+@keyframes ComeOut {
+    0%{
+        width: 20%;
+        height: auto;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        top: 0%;
+        transform: translate(-50%, -100%);
+    }
+    80%{
+        width: 20%;
+        height: auto;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    87.5%{
+        width: 20%;
+        height: auto;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.nav{
+    width: 100%;
+    aspect-ratio: 7.5;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation: Vis 13.5s linear;
+}
+
+@keyframes Vis {
+    0%{opacity: 0%;}
+    95%{opacity: 0%;}
+}
+
+.logo{
+    height: 100%;
+    aspect-ratio: 1;
+    background: black;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 17.5%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+}
+
+.menu{
+    height: 60%;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s linear;
+}
+
+.menu div{
+    height: 15%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: black;
+    transition: 0.5s linear;
+}
+
+.menu:active{
+    background: black;
+}
+
+.menu:active div{
+    background: ghostwhite;
+}
+
+.picture{
+    position: absolute;
+    top: 32.5%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 12.5%;
+    transition: 0.75s linear;
+}
+
+.discription{
+    position: absolute;
+    top: 32.5%;
+    left: 62.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 4%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.discription img{
+    animation: V2 2s linear infinite alternate;
+    height: 75%;
+}
+
+.discription img:nth-child(1){
+    animation: V21 2s linear infinite alternate;
+    height: 100%;
+}
+
+@keyframes V2 {
+    0%{height: 0%;}
+    62.5%{height: 100%;}
+    75%{height: 75%;}
+}
+
+@keyframes V21 {
+    0%{height: 0%;}
+    62.5%{height: 100%;}
+}
+
+.menubar{
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+    background: black;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    border-bottom-left-radius: 100px;
+}
+
+@keyframes menu {
+    0%{
+        width: 0%;
+        border-bottom-left-radius: 0px;
+    }
+    87.5%{
+        width: 75%;
+        border-bottom-left-radius: 0px;
+    }
+    100%{
+        width: 75%;
+        border-bottom-left-radius: 100px;
+    }
+}
+
+.discription2{
+    position: absolute;
+    top: 17.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 4%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.discription2 img{
+    animation: V2 2s linear infinite alternate;
+    height: 75%;
+}
+
+.discription2 img:nth-child(1){
+    animation: V21 2s linear infinite alternate;
+    height: 100%;
+}
+
+.list{
+    height: 50%;
+    width: 75%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list li{
+    width: 100%;
+    height: 25%;
+    position: relative;
+    left: -5%;
+    color: ghostwhite;
+    font-size: 250%;
+    border-color: ghostwhite;
+    border-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    display: flex;
+    align-items: center;
+}
